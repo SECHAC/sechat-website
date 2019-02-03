@@ -1,0 +1,120 @@
+@primaryElementColor: #7CB342;
+@secondaryElementColor: #009249;
+@primaryHighligtColor: #fff;
+@bodyBackgroundColor: #efefef;
+@primaryTextColor: #424242;
+
+body, html {
+    background: @bodyBackgroundColor;
+    color:@primaryTextColor;
+}
+
+.readable {
+    font-size: 1.2rem;
+}
+
+.mdl-layout__header {
+    background-color: @primaryElementColor !important;
+}
+
+.mdl-layout--large-screen-only .mdl-navigation__link, .mdl-layout__header-row .mdl-layout-title, .mdl-layout__drawer-button {
+    color: @primaryHighligtColor !important;
+}
+
+.mdl-layout__content {
+    display: block !important;
+    height: 100%;
+
+}
+
+.bg-wrap {
+    background: url('../image/city.jpg?area=15,0,0,0');
+    background-attachment: fixed;
+}
+
+.cityscape {
+    // background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    background: linear-gradient(180deg, #efefef 0%, #efefef 20%, rgba(0,0,0,0) 100%);
+}
+
+.center-content {
+    padding: 1rem;
+}
+
+.fullscreen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.almost-fullscreen {
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.halfscreen {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexheader {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.indexslogan {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.very-fancy-button {
+    display: flex;
+    justify-content: center;
+    width: 12rem;
+    padding: 0.8rem 0;
+    background-color: @primaryElementColor;
+    color: @primaryHighligtColor;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border: 1px solid @primaryElementColor;
+    transition: 0.3s;
+}
+
+.very-fancy-button:hover {
+    border: 1px solid @bodyBackgroundColor;
+    color: @bodyBackgroundColor;
+}
+
+.info-panel {
+    display: flex;
+    justify-content: center;
+}
+
+.right-side {
+    width: 60%;
+}
+
+.left-side {
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .info-panel {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .right-side {
+        width: 90%;
+        margin: auto;
+    }
+
+    .left-side {
+        text-align: center;
+    }
+}
