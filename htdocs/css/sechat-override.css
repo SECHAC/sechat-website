@@ -13,16 +13,23 @@ html {
 .mdl-layout__header-row .mdl-layout-title,
 .mdl-layout__drawer-button {
   color: #fff !important;
+  font-size: 1.3rem;
+  padding: 0 12px !important;
 }
 .mdl-layout__content {
   display: block !important;
   height: 100%;
 }
-.bg-wrap {
+.bg-wrap-city {
   background: url('../image/city.jpg?area=15,0,0,0');
   background-attachment: fixed;
 }
-.cityscape {
+.bg-wrap-pres {
+  background: url('../image/seminar.jpg');
+  background-position: center top;
+  background-attachment: fixed;
+}
+.bg-fade {
   background: linear-gradient(180deg, #efefef 0%, #efefef 20%, rgba(0, 0, 0, 0) 100%);
 }
 .center-content {
@@ -35,16 +42,25 @@ html {
   align-items: center;
 }
 .almost-fullscreen {
-  height: 92vh;
+  min-height: 92vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .halfscreen {
-  height: 75vh;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #efefef;
+}
+.combine-box {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #efefef;
 }
 .indexheader {
   margin-bottom: 0;
@@ -57,7 +73,6 @@ html {
 .very-fancy-button {
   display: flex;
   justify-content: center;
-  width: 12rem;
   padding: 0.8rem 0;
   background-color: #7CB342;
   color: #fff;
@@ -65,6 +80,15 @@ html {
   font-size: 1.3rem;
   border: 1px solid #7CB342;
   transition: 0.3s;
+}
+.small-bt {
+  width: 12rem;
+}
+.medium-bt {
+  width: 24rem;
+}
+.txt-center {
+  text-align: center;
 }
 .very-fancy-button:hover {
   border: 1px solid #efefef;
@@ -80,6 +104,26 @@ html {
 .left-side {
   text-align: right;
 }
+.regular-panel {
+  width: 75%;
+  margin: auto;
+}
+.alternate-color {
+  background: #fff;
+}
+.mdl-data-table {
+  width: 70%;
+  margin: auto;
+}
+.speakers {
+  display: flex;
+  justify-content: space-around;
+}
+.speaker {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 @media only screen and (max-width: 600px) {
   .info-panel {
     display: flex;
@@ -92,5 +136,12 @@ html {
   }
   .left-side {
     text-align: center;
+  }
+  .regular-panel {
+    width: 90%;
+  }
+  .mdl-data-table {
+    width: 98%;
+    margin: auto;
   }
 }

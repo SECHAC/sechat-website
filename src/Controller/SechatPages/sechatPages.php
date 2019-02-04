@@ -18,7 +18,7 @@ use Anax\Commons\ContainerInjectableTrait;
  *
  * @SuppressWarnings(PHPMD.TooManyPublicMethods)
  */
-class IndexPage implements ContainerInjectableInterface
+class sechatPages implements ContainerInjectableInterface
 {
     use ContainerInjectableTrait;
 
@@ -27,9 +27,18 @@ class IndexPage implements ContainerInjectableInterface
         $title = "Welcome";
 
         $page = $this->di->get("page");
-
         $page->add("sechat/pages/index", []);
+        return $page->render([
+            "title" => $title,
+        ]);
+    }
 
+    public function presentationsAction() : object
+    {
+        $title = "Presentationer";
+
+        $page = $this->di->get("page");
+        $page->add("sechat/pages/presentations", []);
         return $page->render([
             "title" => $title,
         ]);

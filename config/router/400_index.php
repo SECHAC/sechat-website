@@ -7,7 +7,7 @@ return [
         [
             "info" => "SECHAT",
             "mount" => null,
-            "handler" => "\Anax\Controller\SechatPages\IndexPage",
+            "handler" => "\Anax\Controller\SechatPages\sechatPages",
         ],
     ]
 ];
