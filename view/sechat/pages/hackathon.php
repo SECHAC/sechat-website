@@ -7,3 +7,18 @@
                 <a href="#info" class="very-fancy-button medium-bt">ANMÄL DIG OCH/ELLER TEAM <i class="material-icons">expand_more</i></a>
         </div>
     </div>
+    <div class="combine-box">
+        <div class="regular-panel">
+            <h1>Hackathon SECHAT19</h1>
+            <p>
+                Som vanligt håller vi ett hackathon under torsdagen. Alla är välkommna att jobba med
+                vad de känner för eller gå med i existerande team och aktiviteter.
+            </p>
+            <br><br>
+            <h2>Wargame med SIS</h2>
+            <p>Hacka (sönder) någonting kul!</p>
+            <br><br>
+            <h2>Koda astroids i webbläsaren med Mos</h2>
+            <p>Mos fortsätter på sitt astroids-spel. Forka eller bygg eget och häng på!</p>
+        </div>
+    </div>
