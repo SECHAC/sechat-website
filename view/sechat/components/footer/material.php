@@ -38,7 +38,7 @@
   </div>
 
   <div class="mdl-mega-footer__bottom-section">
-    <div class="mdl-logo">SECHAT 2019</div>
+    <div class="mdl-logo">SECHAT</div>
     <ul class="mdl-mega-footer__link-list">
       <li>Copyright &copy; 2019</li>
       <li><a href="#">Källkod</a></li>

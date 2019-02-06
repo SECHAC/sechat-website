@@ -43,4 +43,15 @@ class sechatPages implements ContainerInjectableInterface
             "title" => $title,
         ]);
     }
+
+    public function hackathonAction() : object
+    {
+        $title = "Hackathon";
+
+        $page = $this->di->get("page");
+        $page->add("sechat/pages/hackathon", []);
+        return $page->render([
+            "title" => $title,
+        ]);
+    }
 }
