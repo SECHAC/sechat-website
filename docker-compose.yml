@@ -2,7 +2,7 @@ version: "3"
 services:
     website:
         image: dbwebb/sechat:website
-        #volumes:
-            #- "view:/home/dbwebb/repo/view:r"
-            #- "apache.conf:/etc/apache2/sites-available/000-default.conf:r"
+        volumes:
+            - "./view:/home/dbwebb/repo/view"
+            #- "./docker/apache.conf:/etc/apache2/sites-available/000-default.conf"
         ports: [ "11042:80" ]
