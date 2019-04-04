@@ -1,6 +1,8 @@
 version: "3"
 services:
     website:
-        image: anax/dev:latest-apache
-        volumes: [ ".:/home/anax/repo" ]
-        ports: [ "10099:80" ]
+        image: dbwebb/sechat:website
+        #volumes:
+            #- "view:/home/dbwebb/repo/view:r"
+            #- "apache.conf:/etc/apache2/sites-available/000-default.conf:r"
+        ports: [ "11042:80" ]
