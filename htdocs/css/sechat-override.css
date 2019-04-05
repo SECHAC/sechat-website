@@ -114,6 +114,7 @@ html {
 }
 .right-side {
   width: 60%;
+  padding: 1rem;
 }
 .left-side {
   text-align: right;

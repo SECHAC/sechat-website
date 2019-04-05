@@ -15,19 +15,19 @@ return [
             "title" => "SECHAT",
         ],
         [
-            "text" => "Presentationer",
+            "text" => "Konferens",
             "url" => "presentations",
-            "title" => "Sechats hackaton",
+            "title" => "SECHAT Konferens",
         ],
         [
             "text" => "Hackathon",
             "url" => "hackathon",
-            "title" => "Om denna webbplats.",
+            "title" => "Hackathon",
         ],
         [
-            "text" => "Networking",
+            "text" => "Nätverkande",
             "url" => "networking",
-            "title" => "Studiesocialt networking",
+            "title" => "Studiesocialt nätverkande",
         ],
         [
             "text" => "ANMÄL DIG",
