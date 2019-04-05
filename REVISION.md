@@ -7,6 +7,7 @@ v1.0.1 (2019-04-05)
 ----------------------------
 
 * Update README with section on how to build and modify the theme.
+* Removed unused stylesheets.
 
 
 
