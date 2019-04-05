@@ -70,12 +70,36 @@ You might need to chmod the cache dir, and perhaps create the log dir. But you w
 
 
 
+Build the theme
+-------------------
+
+This is how you can update the stylesheet in `htdocs/css/sechat-override.min.css`.
+
+Start by installing the development tools for building the theme.
+
+```text
+cd theme
+make install
+```
+
+You can now build the theme from the root of the repo.
+
+```text
+make theme
+```
+
+This will move into the dir `theme/`, do a `make build` and it will then copy the stylesheets to `htdocs/css`, if they were updated.
+
+The actual startpoint for the source of the theme is in the file [`theme/src/sechat-override.less`](theme/src/sechat-override.less) and it will include modules available in the directory [`theme/src`](theme/src).
+
+
+
 Acknowledgement
 -------------------
 
 This is a co-effort of several people using freely available documentation and tools from the open source community.
 
-Leonore made it come true.
+Lenore made it come true.
 
 For more contributors, see commit history and issues.
 
