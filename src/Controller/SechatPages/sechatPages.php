@@ -77,6 +77,17 @@ class sechatPages implements ContainerInjectableInterface
         ]);
     }
 
+    public function aboutAction() : object
+    {
+        $title = "Om Arrangörerna";
+
+        $page = $this->di->get("page");
+        $page->add("sechat/pages/about", []);
+        return $page->render([
+            "title" => $title,
+        ]);
+    }
+
     public function registerAction() : object
     {
         $title = "Anmäl dig";

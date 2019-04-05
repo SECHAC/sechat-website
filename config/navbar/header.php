@@ -35,6 +35,11 @@ return [
             "title" => "Studiesocialt nätverkande",
         ],
         [
+            "text" => "Om Arrangörerna",
+            "url" => "about",
+            "title" => "Om SECHAT teamet",
+        ],
+        [
             "text" => "ANMÄL DIG",
             "url" => "register",
             "title" => "Anmäl dig till SECHAT",
