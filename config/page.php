@@ -18,7 +18,7 @@ return [
             "htmlClass" => null,
             "lang" => "sv",
             "stylesheets" => [
-                "css/sechat-override.css",
+                "css/sechat-override.min.css",
                 "https://fonts.googleapis.com/icon?family=Material+Icons",
                 "https://code.getmdl.io/1.3.0/material.green-light_green.min.css",
             ],
