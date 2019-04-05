@@ -3,6 +3,7 @@ services:
     website:
         image: dbwebb/sechat:website
         volumes:
+            - "./config:/home/dbwebb/repo/config"
             - "./htdocs:/home/dbwebb/repo/htdocs"
             - "./view:/home/dbwebb/repo/view"
             #- "./docker/apache.conf:/etc/apache2/sites-available/000-default.conf"
