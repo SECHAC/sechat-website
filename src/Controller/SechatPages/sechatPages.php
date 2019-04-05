@@ -24,10 +24,21 @@ class sechatPages implements ContainerInjectableInterface
 
     public function indexAction() : object
     {
-        $title = "Welcome";
+        $title = "välkommen";
 
         $page = $this->di->get("page");
         $page->add("sechat/pages/index", []);
+        return $page->render([
+            "title" => $title,
+        ]);
+    }
+
+    public function scheduleAction() : object
+    {
+        $title = "Schema";
+
+        $page = $this->di->get("page");
+        $page->add("sechat/pages/schedule", []);
         return $page->render([
             "title" => $title,
         ]);

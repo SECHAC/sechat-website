@@ -15,6 +15,11 @@ return [
             "title" => "SECHAT",
         ],
         [
+            "text" => "Schema",
+            "url" => "schedule",
+            "title" => "Schema",
+        ],
+        [
             "text" => "Konferens",
             "url" => "presentations",
             "title" => "SECHAT Konferens",
