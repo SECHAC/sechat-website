@@ -3,6 +3,13 @@ REVISION HISTORY
 
 
 
+v1.0.2 (2019-04-05)
+----------------------------
+
+* Let docker-compose mount the htdoc/ to make it possible to se updates of the theme.
+
+
+
 v1.0.1 (2019-04-05)
 ----------------------------
 
