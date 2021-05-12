@@ -169,7 +169,7 @@ install: prepare install-production install-tools-php install-tools-bash
 
 # target: install-production      - Install tools needed for production
 .PHONY:  install-production
-install-production: 
+install-production:
 	@$(call HELPTEXT,$@)
 	[ ! -f composer.json ] || composer --no-dev install
 
@@ -580,11 +580,12 @@ ssl-cert-renew:
 define VIRTUAL_HOST_80
 Define site $(WWW_SITE)
 ServerAdmin $(SERVER_ADMIN)
+ServerName $${site}
 
 <VirtualHost *:80>
-	ServerName $${site}
 	ServerAlias local.$${site}
 	ServerAlias do3.$${site}
+	ServerAlias do4.$${site}
 	DocumentRoot $(HTDOCS_BASE)/$${site}/htdocs
 	ServerSignature Off
 
@@ -660,10 +661,11 @@ virtual-host-echo:
 define VIRTUAL_HOST_443
 Define site $(WWW_SITE)
 ServerAdmin $(SERVER_ADMIN)
+ServerName $${site}
 
 <VirtualHost *:80>
-	ServerName $${site}
 	ServerAlias do3.$${site}
+	ServerAlias do4.$${site}
 	Redirect "/" "https://$${site}/"
 </VirtualHost>
 
@@ -721,9 +723,9 @@ export VIRTUAL_HOST_443
 define VIRTUAL_HOST_443_WWW
 Define site $(WWW_SITE)
 ServerAdmin $(SERVER_ADMIN)
+ServerName www.$${site}
 
 <VirtualHost *:80>
-	ServerName www.$${site}
 	Redirect "/" "https://www.$${site}/"
 </VirtualHost>
 

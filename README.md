@@ -94,6 +94,23 @@ The actual startpoint for the source of the theme is in the file [`theme/src/sec
 
 
 
+Setup production environment
+-------------------
+
+```
+git clone git@github.com:sechac/sechat-website sechat.dbwebb.se
+cd sechat.dbwebb.se
+
+make local-publish
+
+make virtual-host
+
+make ssl-cert-create
+make virtual-host-https
+```
+
+
+
 Acknowledgement
 -------------------
 
